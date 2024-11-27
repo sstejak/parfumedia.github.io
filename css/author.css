@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+	font-family:"RSR";
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    src: url("../font/RobotoSlab-Regular.ttf");
+    font-family: "RSR";
+}
+/* rezolucija 1920x1080 */
+#blok {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+	opacity:1;
+}
+body{
+	background-color:#C0C0C0;
+}
+#glavni-zag {
+    position: relative;	
+    background-image: url(../img/o-meni.jpg);
+    height: 450px;
+    width:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+#glavni-zag::after {
+    content: ""; 	
+    position: absolute; 	
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 	
+    z-index: 1; 	
+}
+
+#header {
+    position: relative; 	
+    z-index: 15;	
+    color: #fff;
+    width: 100%;
+    height: inherit;
+}
+
+#logo img{
+    width:200px;
+	height:200px;
+	position:absolute;
+	top:-60px;
+}
+
+#logo a {
+    color: #9a9393;
+}
+
+#nagl-media {
+    font-size: 40px;
+    background-color: rgb(9 8 8 / 54%);
+    border: #4242427a double 3px;
+    letter-spacing: 2px;
+    color: #5d4622;
+}
+
+#logo h1 {
+    color: #9a9393;
+}
+
+#meni-zag {
+    display: flex;
+    margin-top: 16px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.lista {
+    text-decoration: none;
+    color: #9a9393;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#meni-zag hr {
+    width: 0%;
+    transition: width 300ms;
+    color: #9a9393;
+}
+
+#meni-zag a:hover ~ hr {
+    width: 100%;
+}
+
+#naslov {
+    text-align: center;
+    margin-top: 140px;
+    font-family: "arial";
+    position: relative;
+}
+
+#naslov h2 {
+    font-size: 60px;
+	animation: fadeIn 1s ease-in-out forwards;
+}
+#centar{
+	width:800px;
+	height:500px;
+	margin:40px auto;
+	padding:5px;
+	border:2px solid #000;
+	border-radius:30px;
+	background-color:#aaabad;
+	box-shadow:15px 15px 26px 9px rgba(0, 0, 0, 0.25);
+}
+#centar img{
+	display: block;
+    margin: 0px auto;
+    height: 350px;
+
+}
+#slika, #tekst{
+	width:100%;
+	height:50%;
+	padding:10px;
+}
+#slika img{
+	width:35%;
+	height:95%;
+	border-radius:30px;
+	transition:all 300ms;
+	box-shadow:5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+#tekst h3{
+	text-align:center;
+	font-size:25px;
+	color:#423b3b;
+}
+#tekst p{
+	text-align:center;
+	font-size:17px;
+	margin-top:20px;
+	font-style:italic;
+	color:#423b3b;
+}
+#tekst{
+	border:2px solid black;
+	border-radius:30px;
+	transition:all 500ms;
+	cursor:pointer;
+}
+#slika img:hover{
+	width:37%;
+	height:100%;
+}
+#tekst:hover{
+	background-color:white;
+}
+footer{
+	height:290px;
+	border-top:1px solid #000;
+	background-color: #aaabad;
+	
+}
+#footerprvi{
+	margin:20px auto;
+	width:100%;
+	height:50%;
+	display:flex;
+	justify-content:center;
+	color:
+}
+.selekcija{
+	width:450px;
+	height:100px;
+	text-align:center;
+}
+.selekcija h4{
+	margin-bottom:5px;
+}
+.selekcija a{
+	list-style-type:none;
+	text-decoration:none;
+	color:#000;
+}
+.selekcija ul{
+	margin-left:5px;
+}
+.selekcija i{
+	padding-right:10px;
+	color:#423b3b;
+}
+.selekcija hr {
+    width: 0%;
+    transition: width 300ms;
+    color: #423b3b;
+	margin:auto;
+}
+
+.selekcija a:hover ~ hr {
+    width: 40%;
+}
+.selekcija form > input[type="email"]{
+	margin-top: 5px;
+    height: 40px;
+    width: 60%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #423b3b;
+    margin-right: 0px;
+    transition: all 0.2s;
+}
+.selekcija form > input[type="submit"]{
+    height: 24px;
+    width: 40%;
+    padding-left: 0px;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    color: #fff;
+    margin-right: 0px;
+    transition: all 0.5s;
+	background-color:rgb(76 76 76 / 50%);
+	cursor:pointer;
+}
+.selekcija form > input[type="submit"]:hover{
+	background-color:#fff;
+	color:#000;
+}
+#kopirajt{
+	margin:20px auto;
+	width:20%;
+	height:60px;
+	text-align:center;
+}
+#kopirajt i{
+	color:#fff;
+	font-size:40px;
+	transition:all 400ms;
+	padding:5px;
+}
+#kopirajt ul li{
+	display: inline-block;
+	justify-content:space-evenly;
+	display:center;
+	margin-right:20px;
+	
+}
+#kopirajt p{
+	text-align:center;
+	font-size:13px;
+}
+#kopirajt i:hover{
+	background-color:#fff;
+	border-radius:30px;
+	color:#778387;
+}
